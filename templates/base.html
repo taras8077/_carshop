@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    
+    <meta charset="UTF-8">
+    {% block head %}
+        <title>Головна сторінка</title>
+    {% endblock head %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Головна сторінка</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <header>
+        {% include 'menu.html' %}
+    </header>
+    <main>
+        {% block content %}
+            
+        {% endblock content %}
+    </main>
+    <footer class="container text-center py-5" style="background-color: rgba(23, 21, 146, 0.719");>
+        <h4>сайт розробив: Мельник Тарас</h4>
+        <h5>&copy Мельник Тарас</h5>
+        Photo by <a href="https://unsplash.com/@jannis_lucas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jannis Lucas</a> on <a href="https://unsplash.com/photos/9kixbx1zdMw?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        Photo by <a href="https://unsplash.com/@kennyleys?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kenny Leys</a> on <a href="https://unsplash.com/photos/CSNYeLpEbp0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        Photo by <a href="https://unsplash.com/@martinkatler?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Martin Katler</a> on <a href="https://unsplash.com/photos/v81h3l0gFHU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</footer>
+</body>
+</html>
